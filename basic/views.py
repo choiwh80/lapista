@@ -1,5 +1,7 @@
+# -*- coding: utf-8 -*-
 from django.shortcuts import render
 from django.http	import HttpResponse
+from basic.forms import MainForm
 # Create your views here.
 def index(request):
     return render(request, 'pages/index.html')
@@ -33,13 +35,22 @@ def main(request):
 	]
 	selected_value_kids = "value0"
 
-	return render(request, 'pages/main.html',  {"options": adult_num,
+	return render(request, 'pages/main.html',  {"adult_num": adult_num,
 												"selected_value": selected_value,
-												"options_kids": kid_num,
-												"selected_value_kids": selected_value_kids})
+												"kid_num": kid_num,
+												"selected_value_kids": selected_value_kids,
+												})
 
 def result(request):
-    return render(request, 'pages/result.html')
+	# POST 방식이면, 데이터가 담긴 제출된 폼으로 간주.
+	if request.method == 'POST':
+	#request에 담긴 데이터로, 클래스폼을 생성.
+		form = MainForm(request.POST)
+		adult_num = request.POST.get('adult_num')
+	else:
+		form = MainForm()
+
+	return render(request, 'pages/result.html', {'form':form})
 
 def list(request):
     return render(request, 'pages/list.html')
@@ -49,3 +60,6 @@ def detail(request):
 
 def geo(request):
     return render(request, 'pages/geo.html')
+
+def logo(request):
+	return render(request, 'pages/logo.html')

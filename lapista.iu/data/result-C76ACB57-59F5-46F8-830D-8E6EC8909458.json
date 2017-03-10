@@ -5609,6 +5609,77 @@
                         1280
                       ]
                     }
+                  },
+                  {
+                    "c_" : "IUText",
+                    "htmlID" : "text-125",
+                    "positionStorages" : {
+                      "c_" : "JDMutableArrayDict",
+                      "array" : [
+                        {
+                          "c_" : "IUPositionStorage",
+                          "position" : 0,
+                          "xUnit" : 0,
+                          "yUnit" : 0,
+                          "top" : 496,
+                          "left" : 372
+                        }
+                      ],
+                      "keys" : [
+                        1280
+                      ]
+                    },
+                    "styleStorages" : {
+                      "c_" : "JDMutableArrayDict",
+                      "array" : [
+                        {
+                          "c_" : "IUStyleStorage",
+                          "widthUnit" : 0,
+                          "heightUnit" : 0,
+                          "width" : 332,
+                          "height" : 63
+                        }
+                      ],
+                      "keys" : [
+                        1280
+                      ]
+                    }
+                  },
+                  {
+                    "c_" : "IUHTML",
+                    "htmlID" : "html",
+                    "positionStorages" : {
+                      "c_" : "JDMutableArrayDict",
+                      "array" : [
+                        {
+                          "c_" : "IUPositionStorage",
+                          "position" : 0,
+                          "xUnit" : 0,
+                          "yUnit" : 0,
+                          "top" : 505,
+                          "left" : 391
+                        }
+                      ],
+                      "keys" : [
+                        1280
+                      ]
+                    },
+                    "styleStorages" : {
+                      "c_" : "JDMutableArrayDict",
+                      "array" : [
+                        {
+                          "c_" : "IUStyleStorage",
+                          "widthUnit" : 0,
+                          "heightUnit" : 0,
+                          "width" : 294,
+                          "height" : 47
+                        }
+                      ],
+                      "keys" : [
+                        1280
+                      ]
+                    },
+                    "innerHTML" : "<div style=\"text-align:center;\"> \n<p>{{form.as_p}}<\/p>\n<\/div>"
                   }
                 ],
                 "positionStorages" : {
